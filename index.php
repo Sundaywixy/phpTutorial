@@ -7,12 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action = "index.php" method = "post">
-<label>radius</label>
-<input type= "text" name= "radius"> <br>
-<input type= "submit" name= "calculate">
 
-</form> <br>
 
 </body>
 </html>
@@ -20,21 +15,29 @@
 
 
 <?php
-$radius = $_POST["radius"];
-$circumference = null;
-$area = null;
-$volume = null;
+/*
+$age = 75;
 
-$circumference = 2 * pi() * $radius;
-$circumference = round($circumference, 2);
+if ($age >= 70){
+    echo "you are above the voting age";
+}
+elseif ($age >= 18){
+    echo "you are eligible to vote";
+}
+elseif ($age <= 0){
+    echo "it's not a valid age";
+}
 
-$volume = 4/3 * pi() * pow($radius, 2);
-$volume = round($volume, 2);
+else{
+    echo "you are not eligible";
+}
+*/
+ $adult = false;
 
-
-$area = pi() * pow($radius, 2);
-$area = round($area, 2);
-
-echo "circumference = {$circumference}cm <br>";
-echo "area = {$area}cm^2 <br>";
-echo "volume = {$volume}cm^3 <br>";
+ if($adult == true){
+    echo "you can come in";
+ }
+else{
+    echo "you can't come in";
+}
+?>
