@@ -15,29 +15,28 @@
 
 
 <?php
-/*
-$age = 75;
+$age = 17;
+$citizen = true;
 
-if ($age >= 70){
-    echo "you are above the voting age";
-}
-elseif ($age >= 18){
-    echo "you are eligible to vote";
-}
-elseif ($age <= 0){
-    echo "it's not a valid age";
+if($age >= 18 || $citizen){
+    echo "you are eligible to vote <br>";
 }
 
 else{
-    echo "you are not eligible";
+    echo "you are not eligible to vote <br>";
 }
-*/
- $adult = false;
 
- if($adult == true){
-    echo "you can come in";
- }
-else{
-    echo "you can't come in";
+
+
+$man = true;
+$woman = false;
+$citizen = null;
+
+if($citizen = 18 && $man){
+    echo "you are allowed to vote <br>";
 }
+else{
+    echo "you are not recignised <br>";
+}
+
 ?>
